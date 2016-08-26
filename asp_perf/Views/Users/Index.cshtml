@@ -1,0 +1,14 @@
+@model List<ASPPERF.Models.RuzUser>
+
+@{
+    ViewData["Title"] = "Active Users";
+}
+
+<h2>Active Users @Model.Count</h2>
+
+<ul class="users-pane">
+  @foreach (var user in Model)
+  {
+    @Html.Partial("User", user)
+  }
+</ul>

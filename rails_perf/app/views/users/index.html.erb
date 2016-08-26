@@ -1,0 +1,8 @@
+<div class="users-pane">
+  <h1>Active Users (<%= @active_users.length %>)</h1>
+  <ul class="users">
+    <% @active_users.each do |u| %>
+      <%= render partial: 'user', locals: { user: u } %>
+    <% end %>
+  </ul>
+</div>

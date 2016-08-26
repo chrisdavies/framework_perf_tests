@@ -1,0 +1,8 @@
+<div class="users-pane">
+  <h1>Active Users (<%= length active_users %>)</h1>
+  <ul class="users">
+    <%= for u <- active_users do %>
+      <%= render "_user.html", user: u %>
+    <% end %>
+  </ul>
+</div>
