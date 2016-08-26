@@ -87,7 +87,7 @@ In running this test, I wanted to see how each framework fared out-of-the-box. R
 
 Rails' performance is shockingly bad. I think it's because I didn't run it in cluster-mode, so it probably made use of only one core.
 
-ASP.NET Core performed surprisingly well, considering how new the tech is to the Mac/Linux world. A big part of the reason it performed so well was that I used Dapper as the ORM. I wrestled for a while with Entity Framework, but never got it connecting properly. It isn't really fair to compare Dapper to a full-fledged ORM like Ecto/ActiveRecord.
+ASP.NET Core performed surprisingly well, roughly 10x the speed of Rails. Considering how new the tech is to the Mac/Linux world, this surprised me. A big part of the reason it performed so well was that I used Dapper as the ORM. I wrestled for a while with Entity Framework, but never got it connecting properly. It isn't really fair to compare Dapper to a full-fledged ORM like Ecto/ActiveRecord.
 
 So, even though Phoenix didn't win out over all, I suspect that it really is the winner (or at least closer to parity with .NET than things appear). All other tests I've seen suggest that if my ASP.NET Core project was using Entity Framework, the numbers would drop significantly.
 
