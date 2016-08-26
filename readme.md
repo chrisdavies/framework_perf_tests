@@ -59,6 +59,7 @@ Rails:    18.675 seconds
 ASP:      Total:         45  168  26.6    167     277
 Phoenix:  Total:         25  288 157.1    248     744
 Rails:    Total:         63 1780 301.8   1854    1968
+```
 
 ### Average requests per second
 
@@ -69,7 +70,6 @@ Rails:    Requests per second:    53.55 [#/sec] (mean)
 ```
 
 [Full, raw results here.](raw_results.md)
-
 
 ## Analysis
 
