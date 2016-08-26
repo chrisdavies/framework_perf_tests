@@ -14,6 +14,16 @@ The results are passed to a template (e.g. erb, eex, or cshtml) which then rende
 
 I used Rails 4.2.6, ASP.NET Core 1.0, and Phoenix 1.2.1.
 
+* Note, the database isn't included in the project, as I was connecting to an existing one. Also, the .NET project needs a file called `appsettings.json` which should look something like this:
+
+``` 
+{
+  "ConnectionStrings": {
+    "defaultConnection": "Data Source=localhost;User ID=dev;Password=somepassword;Database=db_name;"
+  }
+}
+```
+
 ## The test
 
 The test was run on my Macbook Pro, 2.6 GHz Intel Core i5, 8 GB 1600 MHz DDR3 usin Apache bench:
